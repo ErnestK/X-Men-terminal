@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  skill: MyString
+  d_birth: 2015-02-26
+  avatar: MyString
+
+two:
+  name: MyString
+  skill: MyString
+  d_birth: 2015-02-26
+  avatar: MyString

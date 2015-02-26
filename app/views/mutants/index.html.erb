@@ -1,0 +1,94 @@
+<div class="main">
+  <div class="block_mutants">
+    <h1>All mutants</h1>
+
+    <table>
+      <tbody>
+        <% @mutants.each do |mutant| %>
+          <tr>
+            <td><img src=<%=mutant.avatar%> alt="альтернативный текст"></td>
+            <td>
+              <ul>
+                <li><b>Name:</b> <%= mutant.name %></li>
+                <li><b>Skill:</b> <%= mutant.skill %></li>
+                <li><b>Date birth:</b> <%= mutant.d_birth %></li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li><%= link_to 'Edit', edit_mutant_path(mutant) %></li>
+                <li><%= link_to 'Destroy', mutant, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+              </ul>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Mutant', new_mutant_path %>
+  </div>
+
+  <div class="block_groups">
+    <h1>All groups</h1>
+
+    <table>
+      <tbody>
+        <% @groups.each do |group| %>
+          <tr>
+            <td><%= group.avatar %></td>
+            <td>
+              <ul>
+                <li><b>Name:</b> <%= group.name %></li>
+                <li><b>Description:</b> <%= group.description %></li>
+                <li><b>Color:</b> <%= group.color %></li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li><%= link_to 'Edit', edit_group_path(group) %></li>
+                <li><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+              </ul>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Group', new_group_path %>
+  </div>
+
+  <div class="block_missions">
+    <h1>All missions</h1>
+
+     <table>
+      <tbody>
+        <% @missions.each do |mission| %>
+          <tr>
+            <td><%= mission.avatar %></td>
+            <td>
+              <ul>
+                <li>Codename: <%= mission.codename %></li>
+                <li>Description: <%= mission.description %></li>
+                <li>On check: <%= mission.on_check %></li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li><%= link_to 'Edit', edit_mission_path(mission) %></li>
+                <li><%= link_to 'Destroy', mission, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+              </ul>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Mission', new_mission_path %>
+  </div>
+</div>

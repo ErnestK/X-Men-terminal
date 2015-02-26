@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mutant.name %>
+</p>
+
+<p>
+  <strong>Skill:</strong>
+  <%= @mutant.skill %>
+</p>
+
+<p>
+  <strong>D birth:</strong>
+  <%= @mutant.d_birth %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= @mutant.avatar %>
+</p>
+
+<%= link_to 'Edit', edit_mutant_path(@mutant) %> |
+<%= link_to 'Back', mutants_path %>

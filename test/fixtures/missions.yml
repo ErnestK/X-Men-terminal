@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codename: MyString
+  description: MyString
+  on_check: false
+  avatar: MyString
+
+two:
+  codename: MyString
+  description: MyString
+  on_check: false
+  avatar: MyString

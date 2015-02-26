@@ -1,0 +1,35 @@
+// Place all the styles related to the mutants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.block_mutants {
+	width: 30%;
+	float: left;
+	margin: 20px 20px 20px 20px;
+	background: #ffffff url(mutants.jpg) top left no-repeat;
+}
+.block_groups{
+	width: 30%;
+	float: left;
+    margin: 20px 20px 20px 20px;
+    background: #ffffff url(groups.jpg) top left no-repeat;
+}
+.block_missions{
+	width: 30%;
+	float: left;
+	margin: 20px 20px 20px 20px;
+	background: #ffffff url(missions.jpg) top left no-repeat;
+}
+.block_missions :after{
+	clear:both;
+}
+
+tr{
+	border: 5px sold black;
+}
+
+.island_ul{
+    list-style-type: none;
+}
+.island_ul .island_li{
+	display: inline;
+}
